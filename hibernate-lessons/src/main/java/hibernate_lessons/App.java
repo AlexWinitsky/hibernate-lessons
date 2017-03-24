@@ -16,7 +16,9 @@ public class App
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
  
-		AppUser user = new AppUser("Alex");
+		Person user = new Person();
+		user.setFirstName("Alex");
+		user.setSecondName("Vinitsky");
 		session.save(user);
  
 		session.getTransaction().commit();
