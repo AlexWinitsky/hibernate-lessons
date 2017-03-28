@@ -18,11 +18,16 @@
         <!-- Print executed SQL to stdout -->
         <property name="show_sql">true</property>
  
-        <!-- Drop and re-create all database on startup -->
-        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">create</property>
+        <property name="hibernate.jdbc.fetch_size">2</property>
+        <property name="hibernate.jdbc.batch_size">30</property>
+        <property name="max_fetch_depth">4</property>
  
         <!-- Annotated entity classes -->
         <mapping class="hibernate_lessons.Person"/>
+        <mapping class="hibernate_lessons.Person1"/>
+        <mapping class="hibernate_lessons.Person2"/>
         
     </session-factory>
 </hibernate-configuration>

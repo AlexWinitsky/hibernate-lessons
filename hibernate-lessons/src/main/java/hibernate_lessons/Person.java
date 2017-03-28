@@ -30,9 +30,9 @@ public class Person implements Serializable {
 	        this.secondName = secondName;
 	    }
 
-	    public String getFirstName() {
+	 /*   public String getFirstName() {
 	        return firstName;
-	    }
+	    }*/
 
 	    public void setFirstName(String firstName) {
 	        this.firstName = firstName;

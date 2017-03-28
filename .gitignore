@@ -1,0 +1,11 @@
+*.[oa]
+*~
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+hibernate-lessons/.classpath
+hibernate-lessons/.gitignore
+hibernate-lessons/.project
+hibernate-lessons/.settings/
+
+
